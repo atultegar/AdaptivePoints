@@ -5,10 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdaptivePoints"
              mc:Ignorable="d" 
-             Title="MainWindow" Height="450" Width="800"
-             WindowStartupLocation="CenterScreen" 
+             Title="MainWindow"
+             Height="450" 
+             Width="800"
+             WindowStyle="None"
+             WindowStartupLocation="Manual" 
              ResizeMode="NoResize">
-    <Grid>
+    <Grid Background="LightGray">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition />
@@ -20,7 +24,23 @@
 
         <Grid Background="#0F0F2D"
               Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+            
             <TextBlock Text="Adaptive Component Reference Points" Foreground="White" FontSize="14" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <Button x:Name="CloseBtn"
+                    Grid.Column="1"
+                    Height="20"
+                    Width="20"
+                    BorderThickness="0" Margin="5,2,5,0" VerticalAlignment="Top" Click="CloseBtn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/close_window_96px.png"/>
+                </Button.Background>
+                
+            </Button>
 
         </Grid>
         <StackPanel Grid.Row="1">
@@ -30,7 +50,7 @@
                    HorizontalAlignment="Left"
                    Margin="10 10 0 0"
                    FontSize="14"/>
-            <ListBox x:Name="lstRP" Width="320" Height="340" Margin="10,10,10,0" SelectionChanged="lstRP_SelectionChanged" SelectedIndex="0" 
+            <ListBox x:Name="lstRP" Width="320" Height="340" Margin="10,10,10,0" SelectionChanged="lstRP_SelectionChanged" SelectedIndex="0" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" 
                      />
         </StackPanel>
         <Grid Grid.Column="1" Grid.Row="1">
@@ -54,7 +74,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Border Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" BorderThickness="1" BorderBrush="#808080" Margin="10,0,10,0"/>
-            <TextBlock Text="Revit Point Coordinates" FontSize="14" VerticalAlignment="Center" Margin="10,0,0,0" Grid.Row="0" Grid.ColumnSpan="3"/>
+            <TextBlock Text="Internal Coordinates" FontSize="14" VerticalAlignment="Center" Margin="10,0,0,0" Grid.Row="0" Grid.ColumnSpan="3"/>
             <TextBlock Text="X :" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="20,0,0,0" />
             <TextBlock Text="Y :" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Margin="20,0,0,0" />
             <TextBlock Text="Z :" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" Margin="20,0,0,0" />
