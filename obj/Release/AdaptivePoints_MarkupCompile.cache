@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\
+C:\Projects\DynamoCOWI\AdaptivePoints\obj\Release\
 AdaptivePoints
 none
 false
-DEBUG;TRACE
+TRACE
 
 1435557570
 
-61625306385
-221345121977
+5-296471736
+271695591415
 AdaptiveForm.xaml;
 
-False
+True
 

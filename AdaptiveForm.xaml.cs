@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using Point = Autodesk.DesignScript.Geometry.Point;
 
 namespace AdaptivePoints
@@ -117,14 +118,20 @@ namespace AdaptivePoints
             Close();
         }
 
-        private void CenterWindowOnScreen()
+        //private void CenterWindowOnScreen()
+        //{
+        //    double screenWidth = System.Windows.SystemParameters.PrimaryScreenWidth;
+        //    double screenHeight = System.Windows.SystemParameters.PrimaryScreenHeight;
+        //    double windowWidth = this.Width;
+        //    double windowHeight = this.Height;
+        //    this.Left = (screenWidth / 2 - windowWidth / 2);
+        //    this.Top = (screenHeight / 2 - windowHeight / 2);
+        //}
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            double screenWidth = System.Windows.SystemParameters.PrimaryScreenWidth;
-            double screenHeight = System.Windows.SystemParameters.PrimaryScreenHeight;
-            double windowWidth = this.Width;
-            double windowHeight = this.Height;
-            this.Left = (screenWidth / 2 - windowWidth / 2);
-            this.Top = (screenHeight / 2 - windowHeight / 2);
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
         }
     }
 

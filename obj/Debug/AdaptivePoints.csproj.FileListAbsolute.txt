@@ -3,7 +3,6 @@ C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\AdaptivePoints.pdb
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.CoreCompileInputs.cache
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.pdb
-C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.AssemblyReference.cache
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptiveForm.g.cs
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints_MarkupCompile.cache
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints_MarkupCompile.lref
@@ -24,3 +23,4 @@ C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\ru-RU\ProtoGeometry.resources.dl
 C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\zh-CN\ProtoGeometry.resources.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\zh-TW\ProtoGeometry.resources.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.CopyComplete
+C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.AssemblyReference.cache
