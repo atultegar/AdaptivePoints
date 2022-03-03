@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autodesk.Revit;
 using Autodesk.Revit.DB;
 using Point = Autodesk.DesignScript.Geometry.Point;
-using Autodesk.Revit.UI;
-using Autodesk.Revit.ApplicationServices;
 using RevitServices.Persistence;
 using Revit.GeometryConversion;
-using Autodesk.DesignScript.Geometry;
 using RevitServices.Transactions;
+using System.Linq;
 
 namespace AdaptivePoints
 {
@@ -95,6 +89,9 @@ namespace AdaptivePoints
             if (AdaptiveComponentInstanceUtils.IsAdaptiveComponentInstance(famInstance))
             {
                 IList<ElementId> ids = AdaptiveComponentInstanceUtils.GetInstancePlacementPointElementRefIds(famInstance);
+
+                if (ids.Count() != points.Count())
+                    throw new Exception("UpdateByPoints failed.\nInput points count mismatch.");
 
                 for (int i = 0; i < ids.Count; i++)
                 {

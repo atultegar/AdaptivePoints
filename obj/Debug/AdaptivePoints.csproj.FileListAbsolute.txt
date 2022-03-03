@@ -24,3 +24,5 @@ C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\zh-CN\ProtoGeometry.resources.dl
 C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\zh-TW\ProtoGeometry.resources.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.CopyComplete
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Debug\AdaptivePoints.csproj.AssemblyReference.cache
+C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\DynamoCOWI\AdaptivePoints\bin\Debug\Newtonsoft.Json.xml
