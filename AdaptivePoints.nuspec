@@ -6,7 +6,6 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
     <projectUrl>http://cowi.com</projectUrl>
     <description>$description$</description>
