@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Autodesk.DesignScript.Runtime;
 using Autodesk.Revit.DB;
 using Revit.GeometryConversion;
 using RevitServices.Transactions;
@@ -10,6 +11,7 @@ using Point = Autodesk.DesignScript.Geometry.Point;
 
 namespace AdaptivePoints
 {
+    [IsVisibleInDynamoLibrary(false)]
     public class AdaptiveFamily
     {
         #region WIP

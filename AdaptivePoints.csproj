@@ -32,19 +32,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DynamoCore">
       <HintPath>..\..\..\Program Files\Dynamo\Dynamo Core\2\DynamoCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DynamoServices, Version=2.0.2.6986, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DynamoVisualProgramming.DynamoServices.2.0.2.6986\lib\net45\DynamoServices.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="DynamoServices, Version=2.13.1.3887, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamoVisualProgramming.DynamoServices.2.13.1.3887\lib\net48\DynamoServices.dll</HintPath>
     </Reference>
-    <Reference Include="DynamoUnits, Version=2.0.2.6986, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DynamoVisualProgramming.ZeroTouchLibrary.2.0.2.6986\lib\net45\DynamoUnits.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="DynamoUnits, Version=2.13.1.3887, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamoVisualProgramming.ZeroTouchLibrary.2.13.1.3887\lib\net48\DynamoUnits.dll</HintPath>
     </Reference>
     <Reference Include="netstandard" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -52,8 +51,8 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="ProtoGeometry">
-      <HintPath>..\..\..\Program Files\Dynamo\Dynamo Core\2\ProtoGeometry.dll</HintPath>
+    <Reference Include="ProtoGeometry, Version=2.13.0.6925, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\DynamoVisualProgramming.ZeroTouchLibrary.2.13.1.3887\lib\net48\ProtoGeometry.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
@@ -101,7 +100,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\logo.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\close_window_96px.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
