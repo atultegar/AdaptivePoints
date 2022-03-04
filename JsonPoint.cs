@@ -9,6 +9,7 @@ using Autodesk.DesignScript.Runtime;
 
 namespace AdaptivePoints
 {
+    [IsVisibleInDynamoLibrary(false)]
     public class JsonPoint
     {
         [JsonProperty("x")]

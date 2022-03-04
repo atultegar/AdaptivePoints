@@ -15,3 +15,4 @@ C:\Projects\DynamoCOWI\AdaptivePoints\obj\Release\AdaptivePoints.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\obj\Release\AdaptivePoints.pdb
 C:\Projects\DynamoCOWI\AdaptivePoints\bin\Release\DynamoServices.dll
 C:\Projects\DynamoCOWI\AdaptivePoints\bin\Release\DynamoUnits.dll
+C:\Projects\DynamoCOWI\AdaptivePoints\bin\Release\Assets\close_window_96px.png

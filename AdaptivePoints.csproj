@@ -41,18 +41,22 @@
     </Reference>
     <Reference Include="DynamoServices, Version=2.13.1.3887, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamoVisualProgramming.DynamoServices.2.13.1.3887\lib\net48\DynamoServices.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DynamoUnits, Version=2.13.1.3887, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamoVisualProgramming.ZeroTouchLibrary.2.13.1.3887\lib\net48\DynamoUnits.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="netstandard" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="ProtoGeometry, Version=2.13.0.6925, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\DynamoVisualProgramming.ZeroTouchLibrary.2.13.1.3887\lib\net48\ProtoGeometry.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
@@ -93,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="pkg.json" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="AdaptiveForm.xaml">
@@ -104,9 +109,9 @@
     <Content Include="images\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\close_window_96px.png">
+    <EmbeddedResource Include="Assets\close_window_96px.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
