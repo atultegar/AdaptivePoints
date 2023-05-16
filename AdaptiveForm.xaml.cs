@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autodesk.DesignScript.Runtime;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,10 +13,13 @@ namespace AdaptivePoints
     /// </summary>
     public partial class AdaptiveForm : Window
     {
+        [IsVisibleInDynamoLibrary(false)]
         public List<Point> RevitPoints { get; set; }
+        [IsVisibleInDynamoLibrary(false)]
         public List<Point> SharedPoints { get; set; }
 
 
+        [IsVisibleInDynamoLibrary(false)]
         public AdaptiveForm()
         {
             DataContext = this;
