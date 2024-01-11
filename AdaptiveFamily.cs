@@ -9,7 +9,7 @@ using Revit.GeometryConversion;
 using RevitServices.Transactions;
 using Point = Autodesk.DesignScript.Geometry.Point;
 
-namespace AdaptivePoints
+namespace DynaAdapt
 {
     [IsVisibleInDynamoLibrary(false)]
     public class AdaptiveFamily

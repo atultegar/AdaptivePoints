@@ -6,15 +6,22 @@ using RevitServices.Persistence;
 using Revit.GeometryConversion;
 using RevitServices.Transactions;
 using System.Linq;
+using Autodesk.DesignScript.Runtime;
 
-namespace AdaptivePoints
+namespace DynaAdapt
 {
     public class AdaptivePoint
     {
+        internal AdaptivePoint()
+        {
+            
+        }
+
         /// <summary>
         /// Adaptive Component Family Instance
         /// </summary>
         /// <returns>Location Point List</returns>
+        [IsVisibleInDynamoLibrary(true)]
         [STAThread]
         public static IList<Point> GetLocationPoints(Revit.Elements.AdaptiveComponent adaptiveComponent)
         {
@@ -76,7 +83,7 @@ namespace AdaptivePoints
             return newPoints;
         }
 
-       
+        [IsVisibleInDynamoLibrary(true)]
         public static void UpdateByPoints(Revit.Elements.AdaptiveComponent adaptiveComponent, List<Point> points)
         {
             Document doc = DocumentManager.Instance.CurrentDBDocument;
@@ -119,11 +126,7 @@ namespace AdaptivePoints
                         }
                     }
                 }
-            }
-
-            
-        }
-
-        
+            }            
+        }        
     }
 }

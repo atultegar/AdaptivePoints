@@ -7,18 +7,22 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Autodesk.DesignScript.Runtime;
 
-namespace AdaptivePoints
+namespace DynaAdapt
 {
     [IsVisibleInDynamoLibrary(false)]
     public class JsonPoint
     {
+        [IsVisibleInDynamoLibrary(false)]
         [JsonProperty("x")]
         public double X { get; set; }
+        [IsVisibleInDynamoLibrary(false)]
         [JsonProperty("y")]
         public double Y { get; set; }
+        [IsVisibleInDynamoLibrary(false)]
         [JsonProperty("z")]
         public double Z { get; set; }
 
+        [IsVisibleInDynamoLibrary(false)]
         public JsonPoint(double x, double y, double z)
         {
             X = x;
@@ -26,7 +30,7 @@ namespace AdaptivePoints
             Z = z;
         }
 
-        [IsVisibleInDynamoLibrary(true)]
+        [IsVisibleInDynamoLibrary(false)]
         public static string SerializePointsToJSON(List<Point> points)
         {
             string serialized = "";

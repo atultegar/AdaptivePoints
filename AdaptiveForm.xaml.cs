@@ -6,11 +6,12 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Point = Autodesk.DesignScript.Geometry.Point;
 
-namespace AdaptivePoints
+namespace DynaAdapt
 {
     /// <summary>
     /// Interaction logic for AdaptiveForm.xaml
     /// </summary>
+    [SupressImportIntoVM]
     public partial class AdaptiveForm : Window
     {
         [IsVisibleInDynamoLibrary(false)]
@@ -24,8 +25,6 @@ namespace AdaptivePoints
         {
             DataContext = this;
             InitializeComponent();
-            
-            
         }
 
         private void btnOk_Click(object sender, RoutedEventArgs e)

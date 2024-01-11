@@ -1,4 +1,5 @@
 ﻿using Autodesk.DesignScript.Geometry;
+using Autodesk.DesignScript.Runtime;
 using Autodesk.Revit.DB;
 using Revit.GeometryConversion;
 using RevitServices.Persistence;
@@ -8,10 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdaptivePoints
+namespace DynaAdapt
 {
+    [SupressImportIntoVM]
     public class Utils
     {
+        [IsVisibleInDynamoLibrary(false)]
         public static CoordinateSystem DocumentTotalTransform() //from CivilConnection package
         {
             CoordinateSystem cs = null;

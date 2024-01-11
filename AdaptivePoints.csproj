@@ -7,8 +7,8 @@
     <ProjectGuid>{F5E376A8-4CEA-4444-9725-E5EDECBB45C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdaptivePoints</RootNamespace>
-    <AssemblyName>AdaptivePoints</AssemblyName>
+    <RootNamespace>DynaAdapt</RootNamespace>
+    <AssemblyName>DynaAdapt</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -109,9 +109,7 @@
     <Content Include="images\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\close_window_96px.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\close_window_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
